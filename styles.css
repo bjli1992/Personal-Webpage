@@ -295,6 +295,9 @@ ul { list-style: none; }
 .pub-venue-tag.nature-comm { background: #f3e8ff; color: #6b21a8; }
 .pub-venue-tag.cell-press  { background: #fff3e0; color: #c05a00; }
 .pub-venue-tag.arxiv       { background: #e8f0fe; color: #1a56a0; }
+.pub-venue-tag.ieee        { background: #e3f2fd; color: #0d47a1; }
+.pub-venue-tag.blood       { background: #fde8e8; color: #b71c1c; }
+.pub-venue-tag.elsevier    { background: #fff3e0; color: #c05a00; }
 
 .pub-title {
   font-size: 0.975rem;

@@ -2,27 +2,27 @@
    VARIABLES & RESET
    ============================================================ */
 :root {
-  --bg:          #0a0c10;
-  --bg-card:     #111318;
-  --bg-card-2:   #161a22;
-  --border:      rgba(255,255,255,0.07);
-  --border-hover:rgba(99,179,237,0.35);
-  --text-primary: #e8eaf0;
-  --text-muted:   #8892a4;
-  --text-faint:   #4a5568;
-  --accent:       #63b3ed;
-  --accent-dim:   rgba(99,179,237,0.15);
-  --accent-glow:  rgba(99,179,237,0.08);
-  --green:        #68d391;
-  --purple:       #b794f4;
-  --gradient:     linear-gradient(135deg, #63b3ed 0%, #b794f4 100%);
+  --bg:          #ffffff;
+  --bg-card:     #f7f9fc;
+  --bg-card-2:   #eef1f7;
+  --border:      rgba(0,0,0,0.1);
+  --border-hover:rgba(49,130,206,0.4);
+  --text-primary: #1a202c;
+  --text-muted:   #4a5568;
+  --text-faint:   #718096;
+  --accent:       #3182ce;
+  --accent-dim:   rgba(49,130,206,0.1);
+  --accent-glow:  rgba(49,130,206,0.06);
+  --green:        #276749;
+  --purple:       #553c9a;
+  --gradient:     linear-gradient(135deg, #3182ce 0%, #6b46c1 100%);
   --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono:    'JetBrains Mono', 'Courier New', monospace;
   --radius:       10px;
   --radius-lg:    16px;
   --transition:   0.25s cubic-bezier(0.4,0,0.2,1);
-  --shadow:       0 4px 24px rgba(0,0,0,0.4);
-  --shadow-lg:    0 8px 48px rgba(0,0,0,0.6);
+  --shadow:       0 4px 24px rgba(0,0,0,0.08);
+  --shadow-lg:    0 8px 48px rgba(0,0,0,0.12);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -66,7 +66,7 @@ section {
 }
 
 #navbar.scrolled {
-  background: rgba(10,12,16,0.88);
+  background: rgba(255,255,255,0.92);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   box-shadow: 0 1px 0 var(--border);
@@ -188,7 +188,7 @@ section {
   font-size: clamp(2.8rem, 7vw, 5rem);
   font-weight: 700;
   letter-spacing: -0.03em;
-  background: linear-gradient(135deg, #e8eaf0 0%, #63b3ed 60%, #b794f4 100%);
+  background: linear-gradient(135deg, #1a202c 0%, #3182ce 60%, #6b46c1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -232,7 +232,7 @@ section {
 
 .btn-primary {
   background: var(--accent);
-  color: #0a0c10;
+  color: #ffffff;
 }
 .btn-primary:hover {
   background: #90cdf4;
@@ -427,7 +427,7 @@ section {
    RESEARCH / PUBLICATIONS
    ============================================================ */
 #research {
-  background: linear-gradient(180deg, var(--bg) 0%, #0d0f14 100%);
+  background: linear-gradient(180deg, var(--bg) 0%, #eef1f7 100%);
 }
 
 .pub-list {
@@ -455,7 +455,7 @@ section {
   font-family: var(--font-mono);
   font-size: 5rem;
   font-weight: 700;
-  color: rgba(255,255,255,0.025);
+  color: rgba(0,0,0,0.04);
   line-height: 1;
   pointer-events: none;
   user-select: none;
@@ -486,10 +486,10 @@ section {
   text-transform: uppercase;
 }
 
-.pub-venue.pnas        { background: rgba(104,211,145,0.15); color: #68d391; border: 1px solid rgba(104,211,145,0.25); }
-.pub-venue.nature-comm { background: rgba(183,148,244,0.15); color: #b794f4; border: 1px solid rgba(183,148,244,0.25); }
-.pub-venue.cell-press  { background: rgba(252,129,74,0.15);  color: #f6ad55; border: 1px solid rgba(252,129,74,0.25); }
-.pub-venue.arxiv       { background: rgba(99,179,237,0.15);  color: #63b3ed; border: 1px solid rgba(99,179,237,0.25); }
+.pub-venue.pnas        { background: rgba(39,103,73,0.1);    color: #276749; border: 1px solid rgba(39,103,73,0.25); }
+.pub-venue.nature-comm { background: rgba(85,60,154,0.1);   color: #553c9a; border: 1px solid rgba(85,60,154,0.25); }
+.pub-venue.cell-press  { background: rgba(192,86,33,0.1);   color: #c05621; border: 1px solid rgba(192,86,33,0.25); }
+.pub-venue.arxiv       { background: rgba(49,130,206,0.1);  color: #2c5282; border: 1px solid rgba(49,130,206,0.25); }
 
 .pub-role {
   font-family: var(--font-mono);
@@ -522,7 +522,7 @@ section {
 .pub-tags span {
   font-size: 0.72rem;
   padding: 3px 10px;
-  background: rgba(255,255,255,0.04);
+  background: rgba(0,0,0,0.04);
   border: 1px solid var(--border);
   border-radius: 100px;
   color: var(--text-faint);
@@ -618,7 +618,7 @@ section {
 /* ============================================================
    TIMELINE
    ============================================================ */
-#experience { background: linear-gradient(180deg, var(--bg) 0%, #0d0f14 100%); }
+#experience { background: linear-gradient(180deg, var(--bg) 0%, #eef1f7 100%); }
 
 .timeline {
   position: relative;
@@ -823,7 +823,7 @@ footer p {
     flex-direction: column;
     position: fixed;
     inset: 64px 0 0;
-    background: rgba(10,12,16,0.97);
+    background: rgba(255,255,255,0.97);
     backdrop-filter: blur(16px);
     align-items: center;
     justify-content: center;
